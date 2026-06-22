@@ -4,19 +4,19 @@
 
 ## Features
 
-### 🎯 Homograph Attack Detection
+###  Homograph Attack Detection
 - **AST-based import scanning**: Parses all Python source files and analyzes import statements
 - **Unicode character-set analysis**: Detects mixing of Latin, Cyrillic, and Greek characters indicative of homoglyph attacks
 - **Typosquatting prevention**: Identifies suspicious module names that attempt character spoofing
 
-### 🔍 Pipeline Taint Analysis
+###  Pipeline Taint Analysis
 - **GitHub Actions inspection**: Scans `.github/workflows/*.yml` for risky patterns
 - **Unpinned action detection**: Flags actions using `@main`, `@master`, or semantic versions instead of pinned SHA hashes
 - **Remote code execution patterns**: Detects `curl | sh`, `wget | bash` and similar execution pipes
 - **Environment exfiltration**: Identifies `env`/`printenv` usage combined with outbound network requests
 - **Makefile scanning**: Analyzes Makefile rules for shell injection and taint signatures
 
-### 📦 Registry Forensics & Slopsquatting Detection
+###  Registry Forensics & Slopsquatting Detection
 - **AI hallucination trap detection**: Flags packages exhibiting multiple suspicious indicators
 - **Metadata analysis**: Evaluates version history, description boilerplate, and repository links
 - **Name similarity scoring**: Detects packages with names highly similar to legitimate libraries (typosquatting)
@@ -214,11 +214,3 @@ Contributions welcome. Please:
 ## License
 
 MIT License - See LICENSE file for details
-
-## Support & Feedback
-
-For issues or suggestions, open a GitHub issue or contact the AppSec team.
-
----
-
-**Built with production-grade Python standards**: strict type hints, structured error handling, defensive coding, and self-documenting APIs.
