@@ -19,9 +19,9 @@ class ImportHomographDetector:
     normalization checks.
     """
 
-    LATIN_RANGE = range(0x0041, 0x005B) | range(0x0061, 0x007B)
-    CYRILLIC_RANGE = range(0x0410, 0x044F)
-    GREEK_RANGE = range(0x0391, 0x03A9) | range(0x03B1, 0x03C9)
+    LATIN_RANGE = set(range(0x0041, 0x005B)) | set(range(0x0061, 0x007B))
+    CYRILLIC_RANGE = set(range(0x0410, 0x044F))
+    GREEK_RANGE = set(range(0x0391, 0x03A9)) | set(range(0x03B1, 0x03C9))
 
     SUSPICIOUS_CHAR_SETS = {
         "cyrillic": CYRILLIC_RANGE,
