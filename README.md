@@ -31,11 +31,6 @@ cd vanguard
 pip install -e ".[dev]"
 ```
 
-### As a Package
-```bash
-pip install vanguard-security
-```
-
 ## Quick Start
 
 ```bash
@@ -44,6 +39,9 @@ vanguard scan /path/to/project
 
 # JSON output for integration
 vanguard scan . --json
+
+# scan in Terminal
+python -m vanguard.cli scan .
 
 # Strict mode: exit non-zero on findings
 vanguard scan . --strict
