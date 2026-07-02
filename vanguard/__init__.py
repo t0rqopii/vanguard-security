@@ -4,7 +4,7 @@ Detects homograph attacks, pipeline tampering, and suspicious package patterns.
 """
 
 __version__ = "0.1.0"
-__author__ = "AppSec Team"
+__author__ = "Celebi"
 
 from vanguard.exceptions import (
     HomographAttackDetected,
